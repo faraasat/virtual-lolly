@@ -1,0 +1,16 @@
+.lolly-component__lolly-form {
+  margin-left: 60px;
+}
+
+.lolly-component__lolly-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lolly-component__lolly-form__content {
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgb(0 0 0 / 60%);
+}

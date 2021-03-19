@@ -4,8 +4,7 @@ import SEO from "../components/seo"
 import "./create.styles.css"
 import Lolly from "../images/lolly"
 import { useFormik } from "formik"
-import TextInputComponent from "../components/text-input/text-input.component"
-import MsgBoxComponent from "../components/msg-box/msg-box.component"
+import LollyFormComponent from "../components/lolly-form/lolly-form.component"
 
 const CreatePage = () => {
   const [topColor, setTopColor] = useState<string>("#ed265b")
@@ -78,54 +77,7 @@ const CreatePage = () => {
           </div>
         </div>
         <div className="lolly-page__create-form">
-          <form
-            className="lolly-page__create-form__form"
-            onSubmit={formik.handleSubmit}
-          >
-            <div className="lolly-page__create-form__form-content">
-              <TextInputComponent
-                handleChange={formik.handleChange}
-                values={formik.values.recipient}
-                touched={formik.touched.recipient}
-                error={formik.errors.recipient}
-                label={"To"}
-                id={"recipient"}
-                name={"recipient"}
-                placeholder={"A lolly For..."}
-                htmlFor={"recipient"}
-              />
-              <MsgBoxComponent
-                handleChange={formik.handleChange}
-                values={formik.values.msg}
-                touched={formik.touched.msg}
-                error={formik.errors.msg}
-                label={"Say Something Nice."}
-                id={"msg"}
-                name={"msg"}
-                htmlFor={"msg"}
-                cols={30}
-                rows={10}
-              />
-              <TextInputComponent
-                handleChange={formik.handleChange}
-                values={formik.values.from}
-                touched={formik.touched.from}
-                error={formik.errors.from}
-                label={"From"}
-                id={"from"}
-                name={"from"}
-                placeholder={"from your friend.."}
-                htmlFor={"from"}
-              />
-            </div>
-            <button
-              className="lolly-page__create-form__form-btn"
-              type="submit"
-              disabled={formik.isSubmitting}
-            >
-              Freeze this lolly and get a link
-            </button>
-          </form>
+          <LollyFormComponent formik={formik} />
         </div>
       </div>
     </Layout>
