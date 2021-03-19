@@ -2,6 +2,7 @@ import React from "react"
 import "./lolly-form.styles.css"
 import TextInputComponent from "../text-input/text-input.component"
 import MsgBoxComponent from "../msg-box/msg-box.component"
+import LollyBtnComponent from "../lolly-btn/lolly-btn.component"
 
 const LollyFormComponent = ({ formik }) => {
   return (
@@ -45,13 +46,10 @@ const LollyFormComponent = ({ formik }) => {
           htmlFor={"from"}
         />
       </div>
-      <button
-        className="lolly-component__lolly-form-btn"
-        type="submit"
-        disabled={formik.isSubmitting}
-      >
-        Freeze this lolly and get a link
-      </button>
+      <LollyBtnComponent
+        isSubmitting={formik.isSubmitting}
+        text={"Freeze this lolly and get a link"}
+      />
     </form>
   )
 }

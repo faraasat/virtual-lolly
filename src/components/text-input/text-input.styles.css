@@ -14,6 +14,10 @@
   color: #bbb;
 }
 
+.lolly-component__text-input {
+  margin-top: 9px;
+}
+
 .lolly-component__text-input__error {
   color: red;
   transform: translateY(-5px);
