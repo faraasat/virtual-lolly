@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import "./create.styles.css"
 import Lolly from "../images/lolly"
 import { useFormik } from "formik"
+import TextInputComponent from "../components/text-input/text-input.component"
 
 const CreatePage = () => {
   const [topColor, setTopColor] = useState<string>("#ed265b")
@@ -81,23 +82,17 @@ const CreatePage = () => {
             onSubmit={formik.handleSubmit}
           >
             <div className="lolly-page__create-form__form-content">
-              <div className="lolly-page__create-form__form-content__recipient">
-                <label htmlFor="recipient">To</label>
-                <br />
-                <input
-                  type="text"
-                  id="recipient"
-                  name="recipient"
-                  placeholder="A lolly For..."
-                  onChange={formik.handleChange}
-                  value={formik.values.recipient}
-                />
-                <p className="lolly-page__create-form__form-content__error">
-                  {formik.errors.recipient && formik.touched.recipient
-                    ? formik.errors.recipient
-                    : ""}
-                </p>
-              </div>
+              <TextInputComponent
+                handleChange={formik.handleChange}
+                values={formik.values.recipient}
+                touched={formik.touched.recipient}
+                error={formik.errors.recipient}
+                label={"To"}
+                id={"recipient"}
+                name={"recipient"}
+                placeholder={"A lolly For..."}
+                htmlFor={"recipient"}
+              />
               <div className="lolly-page__create-form__form-content__msg">
                 <label htmlFor="msg">Say Something Nice.</label>
                 <br />
@@ -115,23 +110,17 @@ const CreatePage = () => {
                     : ""}
                 </p>
               </div>
-              <div className="lolly-page__create-form__form-content__from">
-                <label htmlFor="from">From</label>
-                <br />
-                <input
-                  type="text"
-                  id="from"
-                  name="from"
-                  placeholder="from your friend..."
-                  onChange={formik.handleChange}
-                  value={formik.values.from}
-                />
-                <p className="lolly-page__create-form__form-content__error">
-                  {formik.errors.from && formik.touched.from
-                    ? formik.errors.from
-                    : ""}
-                </p>
-              </div>
+              <TextInputComponent
+                handleChange={formik.handleChange}
+                values={formik.values.from}
+                touched={formik.touched.from}
+                error={formik.errors.from}
+                label={"From"}
+                id={"from"}
+                name={"from"}
+                placeholder={"from your friend.."}
+                htmlFor={"from"}
+              />
             </div>
             <button
               className="lolly-page__create-form__form-btn"

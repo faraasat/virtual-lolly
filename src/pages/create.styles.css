@@ -97,26 +97,6 @@
   color: #bbb;
 }
 
-.lolly-page__create-form__form-content__from {
-  margin-top: 17px;
-}
-
-.lolly-page__create-form__form-content__from input {
-  font-size: 18px;
-  width: 315px;
-  padding: 0.4em 0.2em;
-  margin: 0 -0.2em;
-  border: 1px solid #fa73d9;
-  color: #fff;
-  background-color: #222;
-  box-shadow: 0 0 6px #fa73d9;
-  margin: 13px 0px 10px 0px;
-}
-
-.lolly-page__create-form__form-content__from label {
-  color: #bbb;
-}
-
 .lolly-page__create-form__form-btn {
   text-decoration: none;
   margin-top: 45px;
@@ -137,9 +117,4 @@
 .lolly-page__create-form__form-btn:hover {
   background-color: #fa73d9;
   color: #222;
-}
-
-.lolly-page__create-form__form-content__error {
-  color: red;
-  transform: translateY(-5px);
 }
