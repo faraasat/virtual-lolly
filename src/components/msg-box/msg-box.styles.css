@@ -1,0 +1,24 @@
+.lolly-component__msg-box {
+  margin-top: 17px;
+}
+
+.lolly-component__msg-box textarea {
+  font-size: 18px;
+  width: 315px;
+  padding: 0.4em 0.2em;
+  margin: 0 -0.2em;
+  border: 1px solid #fa73d9;
+  color: #fff;
+  background-color: #222;
+  box-shadow: 0 0 6px #fa73d9;
+  margin: 13px 0px 10px 0px;
+}
+
+.lolly-component__msg-box label {
+  color: #bbb;
+}
+
+.lolly-component__msg-box__error {
+  color: red;
+  transform: translateY(-5px);
+}

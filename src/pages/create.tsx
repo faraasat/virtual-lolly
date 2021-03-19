@@ -5,6 +5,7 @@ import "./create.styles.css"
 import Lolly from "../images/lolly"
 import { useFormik } from "formik"
 import TextInputComponent from "../components/text-input/text-input.component"
+import MsgBoxComponent from "../components/msg-box/msg-box.component"
 
 const CreatePage = () => {
   const [topColor, setTopColor] = useState<string>("#ed265b")
@@ -93,23 +94,18 @@ const CreatePage = () => {
                 placeholder={"A lolly For..."}
                 htmlFor={"recipient"}
               />
-              <div className="lolly-page__create-form__form-content__msg">
-                <label htmlFor="msg">Say Something Nice.</label>
-                <br />
-                <textarea
-                  id="msg"
-                  name="msg"
-                  cols={30}
-                  rows={10}
-                  onChange={formik.handleChange}
-                  value={formik.values.msg}
-                />
-                <p className="lolly-page__create-form__form-content__error">
-                  {formik.errors.msg && formik.touched.msg
-                    ? formik.errors.msg
-                    : ""}
-                </p>
-              </div>
+              <MsgBoxComponent
+                handleChange={formik.handleChange}
+                values={formik.values.msg}
+                touched={formik.touched.msg}
+                error={formik.errors.msg}
+                label={"Say Something Nice."}
+                id={"msg"}
+                name={"msg"}
+                htmlFor={"msg"}
+                cols={30}
+                rows={10}
+              />
               <TextInputComponent
                 handleChange={formik.handleChange}
                 values={formik.values.from}
