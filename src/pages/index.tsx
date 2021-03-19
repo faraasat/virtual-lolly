@@ -10,10 +10,6 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Virtual Lollipops for all!" />
       <div className="lolly-page__index">
-        <h1 className="lolly-page__index-heading">virtual lollypop</h1>
-        <p className="lolly-page__index-subheading">
-          because we all know someone who deserves some sugar.
-        </p>
         <div className="lolly-page__index-lollies">
           <Lolly top="#e97393" mid="#d23a62" bottom="#bb1161" />
           <Lolly top="#ed265b" mid="#f77249" bottom="#deaa43" />

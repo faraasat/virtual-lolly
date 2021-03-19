@@ -1,5 +1,6 @@
-.lolly-component__layout-main {
+.lolly-page__create {
   padding: 20px 10vw;
+  min-height: calc(100vh);
   display: flex;
   align-items: center;
   justify-content: flex-start;
