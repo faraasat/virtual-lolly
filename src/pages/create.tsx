@@ -5,6 +5,7 @@ import "./create.styles.css"
 import Lolly from "../images/lolly"
 import { useFormik } from "formik"
 import LollyFormComponent from "../components/lolly-form/lolly-form.component"
+import ColoredLollyComponent from "../components/colored-lolly/colored-lolly.component"
 
 const CreatePage = () => {
   const [topColor, setTopColor] = useState<string>("#ed265b")
@@ -51,30 +52,14 @@ const CreatePage = () => {
       <SEO title="Virtual Lollipops for all!" />
       <div className="lolly-page__create">
         <div className="lolly-page__create-lolly">
-          <Lolly top={topColor} mid={midColor} bottom={bottomColor} />
-          <div className="lolly-page__create-lolly__color-input">
-            <span>
-              <input
-                type="color"
-                onChange={e => setTopColor(e.target.value)}
-                value={topColor}
-              />
-            </span>
-            <span>
-              <input
-                type="color"
-                onChange={e => setMidColor(e.target.value)}
-                value={midColor}
-              />
-            </span>
-            <span>
-              <input
-                type="color"
-                onChange={e => setBottomColor(e.target.value)}
-                value={bottomColor}
-              />
-            </span>
-          </div>
+          <ColoredLollyComponent
+            topColor={topColor}
+            midColor={midColor}
+            bottomColor={bottomColor}
+            setTopColor={setTopColor}
+            setMidColor={setMidColor}
+            setBottomColor={setBottomColor}
+          />
         </div>
         <div className="lolly-page__create-form">
           <LollyFormComponent formik={formik} />
