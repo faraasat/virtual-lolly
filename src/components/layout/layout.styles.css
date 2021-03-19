@@ -1,3 +1,4 @@
-.bookmark-component__layout-main {
-    margin: 0px 0px;
+.lolly-component__layout-main {
+    height: 100vh;
+    min-height: 720px;
 }

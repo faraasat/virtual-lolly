@@ -4,7 +4,7 @@ import "./layout.styles.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <main className="bookmark-component__layout-main">{children}</main>
+      <main className="lolly-component__layout-main">{children}</main>
     </>
   )
 }
