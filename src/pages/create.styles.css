@@ -130,9 +130,16 @@
   cursor: pointer;
   transition: all 0.3s;
   font-weight: bold;
+  border: none;
+  outline: none;
 }
 
 .lolly-page__create-form__form-btn:hover {
   background-color: #fa73d9;
   color: #222;
+}
+
+.lolly-page__create-form__form-content__error {
+  color: red;
+  transform: translateY(-5px);
 }
