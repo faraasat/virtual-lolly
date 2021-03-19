@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Virtual Lolly Site`,
+    description: `This is a virtual lolly site built using Gatsby, FaunaDB and Netlify and you can send virtual lolly by using this site`,
+    author: `@farasat`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

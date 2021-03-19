@@ -7,3 +7,59 @@
   flex-direction: column;
   background-color: rgba(33, 33, 43);
 }
+
+.lolly-page__index-lollies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58%;
+}
+
+.lolly-page__index-lollies svg {
+  margin: 0px 15px;
+  filter: drop-shadow(0px 0px 8px rgba(1, 1, 1, 1));
+}
+
+.lolly-page__index-heading {
+  font-family: "Pacifico", cursive;
+  font-style: italic;
+  color: #fff;
+  text-shadow: #fa73d9 0 0 8px;
+  font-size: 75px;
+  font-weight: 300;
+  cursor: pointer;
+  margin-top: 45px;
+}
+
+.lolly-page__index-heading:hover {
+  text-shadow: #fa73d9 0 0 16px;
+}
+
+.lolly-page__index-subheading {
+  color: #ddd;
+  text-shadow: #fa73d9 1px 1px 4px;
+  font-size: 20px;
+  margin-top: 15px;
+  width: 300px;
+  text-align: center;
+}
+
+.lolly-page__index-btn {
+  text-decoration: none;
+  margin-bottom: 30px;
+  box-shadow: 0 0 6px #fa73d9;
+  border: 2px solid #fa73d9;
+  background-color: transparent;
+  font-size: 0.9em;
+  color: #fa73d9;
+  padding: 1em 2em;
+  border-radius: 4em;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.lolly-page__index-btn:hover {
+  background-color: #fa73d9;
+  color: #222;
+}
