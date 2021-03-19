@@ -1,14 +1,9 @@
-.bookmark-page__index {
+.lolly-page__index {
   padding: 20px 10vw;
   min-height: calc(100vh);
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-}
-
-.bookmark-page__index__bookmarks-list {
-  margin-top: 55px;
-  width: 50%;
-  min-width: 400px;
+  background-color: rgba(33, 33, 43);
 }
