@@ -1,0 +1,23 @@
+.lolly-component__lolly-text-undefined {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 0px;
+}
+
+.lolly-component__lolly-text-undefined__para {
+  margin: 15px 0px 35px 0px;
+  color: #eee;
+  font-weight: 600;
+  font-size: 35px;
+  letter-spacing: -2px;
+}
+
+.lolly-component__lolly-text-undefined__img {
+  margin: 30px 0px 25px 0px;
+}
+
+.lolly-component__lolly-text-undefined__btn {
+    margin-bottom: 25px;
+}
