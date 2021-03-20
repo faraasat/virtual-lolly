@@ -4,6 +4,7 @@ import { Redirect } from "@reach/router"
 import SEO from "../../components/seo"
 import Layout from "../../components/layout/layout.component"
 import Lolly from "../../images/lolly"
+import LollyTextComponent from "../../components/lolly-text/lolly-text.component"
 
 const LolliesPage = props => {
   if (props["*"] === "") {
@@ -19,7 +20,7 @@ const LolliesPage = props => {
             <Lolly top={"#ed265b"} mid={"#f77249"} bottom={"#bb1161"} />
           </div>
           <div className="lolly-page__lollies-form">
-            
+            <LollyTextComponent defined={true} />
           </div>
         </div>
       </Layout>

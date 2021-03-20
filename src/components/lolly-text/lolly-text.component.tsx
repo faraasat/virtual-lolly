@@ -3,12 +3,15 @@ import "./lolly-text.styles.css"
 import LollyTextDefinedComponent from "../lolly-text-defined/lolly-text-defined.component"
 import LollyTextUndefinedComponent from "../lolly-text-undefined/lolly-text-undefined.component"
 
-const LollyTextComponent = () => {
+const LollyTextComponent = ({ defined }) => {
   return (
-    <div>
-      <LollyTextDefinedComponent />
-      <LollyTextUndefinedComponent />
-    </div>
+    <>
+      {defined ? (
+        <LollyTextDefinedComponent />
+      ) : (
+        <LollyTextUndefinedComponent />
+      )}
+    </>
   )
 }
 
