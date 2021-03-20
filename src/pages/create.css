@@ -12,3 +12,23 @@
   align-items: center;
   justify-content: center;
 }
+
+/* .lolly-page__create-dialog .MuiPaper-root {
+  background-color: #eeeeee !important;
+} */
+
+.lolly-page__create-dialog__typo .MuiTypography-h6 {
+  font-family: "Pacifico", cursive !important;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.lolly-page__create-dialog__link {
+  font-family: "Rancher", cursive;
+  text-decoration: none;
+  width: 100%;
+  color: teal;
+  font-weight: bold;
+  margin-left: 15%;
+  margin-top: 40px;
+}

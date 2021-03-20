@@ -38,7 +38,15 @@ const LolliesPage = props => {
 
   return (
     <div>
-      <SEO title={`Your Lolly Here! - ${props["*"]}`} />
+      <SEO
+        title={`Your Lolly Here! - ${
+          loading
+            ? "Loading..."
+            : data.getLolly === null
+            ? "Lolly Not Found"
+            : data?.getLolly.recipient
+        }`}
+      />
       <Layout>
         {loading ? (
           <div className="lolly-page__loading">
@@ -54,7 +62,7 @@ const LolliesPage = props => {
           </div>
         ) : (
           <LollyTextComponent
-            defined={data.getLolly === null ? false : true}
+            defined={data?.getLolly === null ? false : true}
             recipient={data?.getLolly?.recipient}
             msg={data?.getLolly?.msg}
             from={data?.getLolly?.from}
