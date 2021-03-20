@@ -49,8 +49,8 @@ const CreatePage = () => {
   return (
     <Layout>
       <SEO title="Virtual Lollipops for all!" />
-      <div className="lolly-page__create">
-        <div className="lolly-page__create-lolly">
+      <div className="create-page__create">
+        <div className="create-page__create-lolly">
           <ColoredLollyComponent
             topColor={topColor}
             midColor={midColor}
@@ -60,7 +60,7 @@ const CreatePage = () => {
             setBottomColor={setBottomColor}
           />
         </div>
-        <div className="lolly-page__create-form">
+        <div className="create-page__create-form">
           <LollyFormComponent formik={formik} />
         </div>
       </div>
