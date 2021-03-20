@@ -1,14 +1,1 @@
-.lolly-page__lollies {
-  height: 740px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  padding-bottom: 20px;
-}
 
-.lolly-page__lollies-lolly {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

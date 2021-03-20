@@ -3,7 +3,6 @@ import "./lollies.css"
 import { Redirect } from "@reach/router"
 import SEO from "../../components/seo"
 import Layout from "../../components/layout/layout.component"
-import Lolly from "../../images/lolly"
 import LollyTextComponent from "../../components/lolly-text/lolly-text.component"
 
 const LolliesPage = props => {
@@ -15,14 +14,12 @@ const LolliesPage = props => {
     <>
       <SEO title={`Your Lolly Here! - ${props["*"]}`} />
       <Layout>
-        <div className="lolly-page__lollies">
-          <div className="lolly-page__lollies-lolly">
-            <Lolly top={"#ed265b"} mid={"#f77249"} bottom={"#bb1161"} />
-          </div>
-          <div className="lolly-page__lollies-form">
-            <LollyTextComponent defined={true} />
-          </div>
-        </div>
+        <LollyTextComponent
+          defined={false}
+          recipient={"Ali"}
+          msg={"Hi There"}
+          from={"Farasat"}
+        />
       </Layout>
     </>
   )

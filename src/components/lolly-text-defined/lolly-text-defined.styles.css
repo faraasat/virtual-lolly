@@ -1,0 +1,55 @@
+.lolly-component__lolly-text {
+  margin-left: 80px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lolly-component__lolly-text__content {
+  width: 600px;
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 10px rgb(0 0 0 / 60%);
+  text-align: left;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #dadadb;
+}
+
+.lolly-component__lolly-text__content-recipient {
+  margin: 35px 0px;
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  text-shadow: #000 0 0 10px;
+}
+
+.lolly-component__lolly-text__content-msg {
+  margin: 35px 0px;
+  text-shadow: #000 0 0 10px;
+}
+
+.lolly-component__lolly-text__content-from {
+  margin: 35px 0px;
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  padding-left: 64px;
+  text-shadow: #000 0 0 10px;
+}
+
+.lolly-component__lolly-text__para {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-align: center;
+  padding: 5px;
+}
+
+.lolly-component__lolly-text__para a {
+  color: #eee;
+  text-decoration: none;
+  border-bottom: 1px solid #f88cdd;
+}
+
+.lolly-component__lolly-text__para a:hover {
+  border-bottom-color: #eee;
+}
