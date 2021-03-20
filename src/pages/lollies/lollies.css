@@ -1,4 +1,4 @@
-.lolly-page__create {
+.lolly-page__lollies {
   height: 740px;
   display: flex;
   align-items: center;
@@ -7,7 +7,7 @@
   padding-bottom: 20px;
 }
 
-.lolly-page__create-lolly {
+.lolly-page__lollies-lolly {
   display: flex;
   align-items: center;
   justify-content: center;

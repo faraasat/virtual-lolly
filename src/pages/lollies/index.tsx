@@ -14,11 +14,11 @@ const LolliesPage = props => {
     <>
       <SEO title={`Your Lolly Here! - ${props["*"]}`} />
       <Layout>
-        <div className="lolly-page__create">
-          <div className="lolly-page__create-lolly">
+        <div className="lolly-page__lollies">
+          <div className="lolly-page__lollies-lolly">
             <Lolly top={"#ed265b"} mid={"#f77249"} bottom={"#bb1161"} />
           </div>
-          <div className="lolly-page__create-form"></div>
+          <div className="lolly-page__lollies-form"></div>
         </div>
       </Layout>
     </>
