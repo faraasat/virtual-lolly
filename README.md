@@ -42,4 +42,7 @@
   <a href="https://gatsby-vlolly.netlify.app/">
     <img width='65%' src="screen-shot-3.png"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
   </a>
+  <a href="https://gatsby-vlolly.netlify.app/">
+    <img width='65%' src="screen-shot-4.png"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  </a>
 </p>
