@@ -4,13 +4,21 @@ import LollyTextDefinedComponent from "../lolly-text-defined/lolly-text-defined.
 import LollyTextUndefinedComponent from "../lolly-text-undefined/lolly-text-undefined.component"
 import Lolly from "../../images/lolly"
 
-const LollyTextComponent = ({ defined, recipient, msg, from }) => {
+const LollyTextComponent = ({
+  defined,
+  recipient,
+  msg,
+  from,
+  top,
+  mid,
+  bottom,
+}) => {
   return (
     <>
       {defined ? (
         <div className="lolly-page__lolly-text">
           <div className="lolly-page__lolly-text__lolly">
-            <Lolly top={"#ed265b"} mid={"#f77249"} bottom={"#bb1161"} />
+            <Lolly top={top} mid={mid} bottom={bottom} />
           </div>
           <div className="lolly-page__lolly-text__form">
             <LollyTextDefinedComponent
