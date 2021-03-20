@@ -34,7 +34,7 @@ const LolliesPage = props => {
     },
   })
 
-  console.log(error)
+  if (error) console.log(error)
 
   return (
     <div>
@@ -69,6 +69,7 @@ const LolliesPage = props => {
             top={data?.getLolly?.top}
             mid={data?.getLolly?.mid}
             bottom={data?.getLolly?.bottom}
+            {...props}
           />
         )}
       </Layout>

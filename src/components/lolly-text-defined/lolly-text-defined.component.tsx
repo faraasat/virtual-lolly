@@ -5,6 +5,14 @@ import "./lolly-text-defined.styles.css"
 const LollyTextDefinedComponent = ({ recipient, msg, from }) => {
   return (
     <div className="lolly-component__lolly-text">
+      <div className="lolly-component__lolly-text__share-detail">
+        <p className="lolly-component__lolly-text__share-detail__detail">
+          Your Lolly is Freezing. Share it with this link:
+        </p>
+        <p className="lolly-component__lolly-text__share-detail__link">
+          {location.href}
+        </p>
+      </div>
       <div className="lolly-component__lolly-text__content">
         <h1 className="lolly-component__lolly-text__content-recipient">
           {recipient}

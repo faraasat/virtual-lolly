@@ -4,15 +4,9 @@ import LollyTextDefinedComponent from "../lolly-text-defined/lolly-text-defined.
 import LollyTextUndefinedComponent from "../lolly-text-undefined/lolly-text-undefined.component"
 import Lolly from "../../images/lolly"
 
-const LollyTextComponent = ({
-  defined,
-  recipient,
-  msg,
-  from,
-  top,
-  mid,
-  bottom,
-}) => {
+const LollyTextComponent = props => {
+  const { defined, recipient, msg, from, top, mid, bottom } = props
+
   return (
     <>
       {defined ? (
