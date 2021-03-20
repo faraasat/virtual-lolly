@@ -18,7 +18,9 @@ const LolliesPage = props => {
           <div className="lolly-page__lollies-lolly">
             <Lolly top={"#ed265b"} mid={"#f77249"} bottom={"#bb1161"} />
           </div>
-          <div className="lolly-page__lollies-form"></div>
+          <div className="lolly-page__lollies-form">
+            
+          </div>
         </div>
       </Layout>
     </>
